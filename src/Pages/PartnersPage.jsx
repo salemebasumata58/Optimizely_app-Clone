@@ -76,7 +76,7 @@ const PartnersPage = () => {
       </Stack>
       <br />
       <SimpleGrid columns={[1, 2, 2]} spacing={10}>
-        <Box bg="tomato"minH={{base:"350px", md:"300px"}} p={"9%"}>
+        <Box bg="tomato" minH={{ base: "350px", md: "300px" }} p={"9%"}>
           <Heading>Find a solution partner</Heading>
           <br />
           <Text>
@@ -94,7 +94,7 @@ const PartnersPage = () => {
             />
           </Box>
         </Box>
-        <Box bg="tomato"minH={{base:"350px", md:"300px"}} p={"9%"}>
+        <Box bg="tomato" minH={{ base: "350px", md: "300px" }} p={"9%"}>
           <Heading>Find a Technology Partner</Heading>
           <br />
           <Text>
@@ -102,15 +102,15 @@ const PartnersPage = () => {
             customers through strategic partnerships with best-of-breed software
             companies.
           </Text>
-        
-            <ArrowForwardIcon
-              position={"absolute"}
-              bottom={3}
-              right={50}
-              color={"black"}
-              fontSize={"4xl"}
-            />
-          <Box >
+
+          <ArrowForwardIcon
+            position={"absolute"}
+            bottom={3}
+            right={50}
+            color={"black"}
+            fontSize={"4xl"}
+          />
+          <Box>
             <ArrowForwardIcon
               position={"absolute"}
               bottom={3}
@@ -120,7 +120,7 @@ const PartnersPage = () => {
             />
           </Box>
         </Box>
-        <Box bg="tomato"minH={{base:"350px", md:"300px"}} p={"9%"}>
+        <Box bg="tomato" minH={{ base: "350px", md: "300px" }} p={"9%"}>
           <Heading>Become a partner</Heading>
           <br />
           <Text>
@@ -128,7 +128,7 @@ const PartnersPage = () => {
             growing your business with Optimizely and discover the benefits of
             joining our network of more than 800 partners.
           </Text>
-          <Box >
+          <Box>
             <ArrowForwardIcon
               position={"absolute"}
               bottom={3}
@@ -138,7 +138,7 @@ const PartnersPage = () => {
             />
           </Box>
         </Box>
-        <Box bg="tomato"  p={"9%"} minH={{base:"350px", md:"300px"}}>
+        <Box bg="tomato" p={"9%"} minH={{ base: "350px", md: "300px" }}>
           <Heading>Partner Center login</Heading>
           <br />
           <Text>
@@ -159,18 +159,42 @@ const PartnersPage = () => {
       <br />
 
       <Box textAlign={"center"} margin={"auto"} px={5}>
-        <Heading position={"relative"} textAlign={"left"}>About the Optimizely Partner Network</Heading>
-        <Text fontSize={["sm","xl"]} position={"relative"} textAlign={"left"}>We'll help you find the best partner that will support you to reach your goals</Text>
+        <Heading position={"relative"} textAlign={"left"}>
+          About the Optimizely Partner Network
+        </Heading>
+        <Text fontSize={["sm", "xl"]} position={"relative"} textAlign={"left"}>
+          We'll help you find the best partner that will support you to reach
+          your goals
+        </Text>
         <br />
-      <AspectRatio margin={"auto"} maxW={"full"} minH={{base:"300px", md:"400px"}} ratio={1}>
-              <iframe
-                title="naruto"
-                src="https://fast.wistia.net/embed/iframe/5w1gsm9tfc?videoFoam=true&playerColor=0037ff&muted=true&autoplay=true&playlistLoop=true&controlsVisibleOnLoad=true&playButton=false"
-                allowFullScreen
-              />
-            </AspectRatio>
+        <AspectRatio
+          margin={"auto"}
+          maxW={"full"}
+          minH={{ base: "200px", md: "300px" }}
+          ratio={2}
+          border={"1px solid red"}
+        >
+          <iframe
+            title="naruto"
+            src="https://fast.wistia.net/embed/iframe/5w1gsm9tfc?videoFoam=true&playerColor=0037ff&muted=true&autoplay=true&playlistLoop=true&controlsVisibleOnLoad=true&playButton=false"
+            allowFullScreen
+          />
+        </AspectRatio>
       </Box>
-      <Box></Box>
+      <br />
+      <Box border={"1px solid red"} marginTop={0} textAlign={"left"} p={'7%'} h={"35vh"}>
+        <Heading>
+          Ready to take your digital experiences to the next level?
+        </Heading>
+        <Text>
+          Optimizely is trusted by over 9,000 leading companies for digital
+          experiences, content management, experimentation and commerce. Get
+          started
+        </Text>
+        <br />
+        <Button rounded={"xl"} bg={"blue.500"}>Get Started</Button>
+      </Box>
+      
     </Container>
   );
 };
