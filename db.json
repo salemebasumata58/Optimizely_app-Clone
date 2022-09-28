@@ -1,0 +1,28 @@
+{
+   "partners":[
+   {
+    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
+    "title": "Experimentation for developers: an introduction",
+    "desc": "We’ve enabled over 9,000 leading brand product and development teams to build better products, faster with the power of Full Stack Experimentation. Read more about it below and check out our video series."
+
+   },
+   {
+    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/QP?w=650&h=344",
+    "title": "Google Cloud and Optimizely Experimentation Suite - a match made for optimization",
+    "desc": "When Optimizely and Google announced our new partnership to host Optimizely’s Experimentation suite within Google’s cloud services, it felt like a no-brainer: Google’s world-class infrastructure, services and foundation would support Optimizely’s world-class A/B testing and Feature Flag tools to deliver a best-in-class experience for our joint customers."
+
+   },
+   {
+    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
+    "title": "Optimizely x Contentsquare: 5 ways we’re better together",
+    "desc": "Optimizely and Contentsquare are on a mission to help brands simplify the process of developing a robust experimentation strategy. Read on to learn more."
+
+   },
+   {
+    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
+    "title": "Experimentation for developers: an introduction",
+    "desc": "We’ve enabled over 9,000 leading brand product and development teams to build better products, faster with the power of Full Stack Experimentation. Read more about it below and check out our video series."
+
+   }
+   ]
+  }
