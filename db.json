@@ -1,28 +1,205 @@
 {
-   "partners":[
-   {
-    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
-    "title": "Experimentation for developers: an introduction",
-    "desc": "We’ve enabled over 9,000 leading brand product and development teams to build better products, faster with the power of Full Stack Experimentation. Read more about it below and check out our video series."
-
-   },
-   {
-    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/QP?w=650&h=344",
-    "title": "Google Cloud and Optimizely Experimentation Suite - a match made for optimization",
-    "desc": "When Optimizely and Google announced our new partnership to host Optimizely’s Experimentation suite within Google’s cloud services, it felt like a no-brainer: Google’s world-class infrastructure, services and foundation would support Optimizely’s world-class A/B testing and Feature Flag tools to deliver a best-in-class experience for our joint customers."
-
-   },
-   {
-    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
-    "title": "Optimizely x Contentsquare: 5 ways we’re better together",
-    "desc": "Optimizely and Contentsquare are on a mission to help brands simplify the process of developing a robust experimentation strategy. Read on to learn more."
-
-   },
-   {
-    "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
-    "title": "Experimentation for developers: an introduction",
-    "desc": "We’ve enabled over 9,000 leading brand product and development teams to build better products, faster with the power of Full Stack Experimentation. Read more about it below and check out our video series."
-
-   }
-   ]
-  }
+  "partners": [
+    {
+      "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
+      "title": "Experimentation for developers: an introduction",
+      "desc": "We’ve enabled over 9,000 leading brand product and development teams to build better products, faster with the power of Full Stack Experimentation. Read more about it below and check out our video series."
+    },
+    {
+      "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/QP?w=650&h=344",
+      "title": "Google Cloud and Optimizely Experimentation Suite - a match made for optimization",
+      "desc": "When Optimizely and Google announced our new partnership to host Optimizely’s Experimentation suite within Google’s cloud services, it felt like a no-brainer: Google’s world-class infrastructure, services and foundation would support Optimizely’s world-class A/B testing and Feature Flag tools to deliver a best-in-class experience for our joint customers."
+    },
+    {
+      "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
+      "title": "Optimizely x Contentsquare: 5 ways we’re better together",
+      "desc": "Optimizely and Contentsquare are on a mission to help brands simplify the process of developing a robust experimentation strategy. Read on to learn more."
+    },
+    {
+      "img": "https://i.idio.co/e6d6c7dee275454ebf80e03c713eaf15/1ko?w=650&h=344",
+      "title": "Experimentation for developers: an introduction",
+      "desc": "We’ve enabled over 9,000 leading brand product and development teams to build better products, faster with the power of Full Stack Experimentation. Read more about it below and check out our video series."
+    }
+  ],
+  "registerUser": [
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 2
+    },
+    {
+      "email": "sbasumatas58@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "email": "sbasumatas58@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 5
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 6
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 7
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 8
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 9
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 10
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 11
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 12
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 13
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 14
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 15
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 16
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 17
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 18
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 19
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 20
+    }
+  ],
+  "plansData": [
+    {
+      "title": "Welcome",
+      "desc": "Manage tasks, work, campaigns and content across teams for seamless collaboration.",
+      "list": [
+        "Digital asset management",
+        "Handle tasks and workflows",
+        "Streamline work requests",
+        "Integrated calendar to track timelines",
+        "Easy commenting and collaboration to avoid bottlenecks"
+      ]
+    },
+    {
+      "title": "Content management",
+      "desc": "Create compelling content experiences. Empower your editors to compose great experiences by creating and combining content assets.",
+      "list": [
+        "Content management",
+        "Authoring and layout",
+        "Headless API",
+        "Approval workflow",
+        "Design compelling experiences"
+      ]
+    },
+    {
+      "title": "Web A/B testing",
+      "desc": "Experiment everywhere and personalize every touchpoint.",
+      "list": [
+        "Run many types of A/B tests",
+        "Reliable results with stats engine",
+        "Headless API",
+        "Personalize content",
+        "AI predictive audiences"
+      ]
+    },
+    {
+      "title": "Feature management",
+      "desc": "Remotely manage and experiment on features server-side in your apps.",
+      "list": [
+        "SDKs in 10 programming languages",
+        "Advanced audience targeting",
+        "Cached data files keep your app fast",
+        "Approval workflow",
+        "Robust community and docs"
+      ]
+    },
+    {
+      "title": "Commerce",
+      "desc": "Run multiple shops, inventory and a catalog online and/or offline.",
+      "list": [
+        "Multi-site & multi-lingual",
+        "Visitor targeting",
+        "Project collaboration",
+        "Inventory and order management",
+        "Design compelling experiences"
+      ]
+    }
+  ],
+  "plansSolutionData": [
+    {
+      "img": "https://www.optimizely.com/contentassets/addabccfcf4341c2bf2ac7387b6d5794/opt-icons_50px_intelligent-content.svg",
+      "title": "Intelligent Content",
+      "desc": "You need to convert raw data into recommendations that drive engagement and grow revenue."
+    },
+    {
+      "img": "https://www.optimizely.com/contentassets/feb4a78e35a34e5fb20a6e618ce5ddde/opt-icon_50px_ecommerce.svg",
+      "title": "IAdaptive Commerce",
+      "desc": "See how you can automatically segment and target customers in real-time, predict behavior and infuse delight into every touchpoint."
+    },
+    {
+      "img": "https://www.optimizely.com/contentassets/fbcc8c7ff9b54bdc92e4d112e5bd69f4/opt-icons_50px_b2b.svg",
+      "title": "Digital Distribution",
+      "desc": "Learn how to instantly boost conversions, cross-sells, upsells and order value with personalized product recommendations."
+    },
+    {
+      "img": "https://www.optimizely.com/contentassets/1fba8b0720b5440fbf3ab5afc9ff45a3/opt-icon_50px_optimization.svg",
+      "title": "Digital Optimization",
+      "desc": "You need to collaborate effortlessly on content strategy, creation and analytics by going into deeper metrics than just web sessions."
+    },
+    {
+      "img": "https://www.optimizely.com/contentassets/553eba1e73f64367ae841b02ba9aee0a/opt-icon_50px_headless.svg",
+      "title": "Headless Experiences",
+      "desc": "You need to create feature flags, release products and run experiments in different parts of your stack, all from one place."
+    }
+  ]
+}
