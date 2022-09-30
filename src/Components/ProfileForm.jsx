@@ -24,7 +24,7 @@ const ProfileForm = () => {
       border={"1px solid red"}
     >
       <VStack w={"full"} spacing={2} alignItems={"flex-start"}>
-        <Text alignItems={"flex-start"} fontSize={"2xl"} fontWeight={600}>First, we need to know a couple of things about you</Text>
+        <Text textAlign={"left"} fontSize={["xl","2xl"]} fontWeight={700} w={"70%"} margin={"auto"}>First, we need to know a couple of things about you</Text>
       </VStack>
       <Grid templateColumns="repeat(2, 1fr)" gap={2} w={"full"}>
         <GridItem colSpan={{base:'2', lg:1}}>
@@ -84,6 +84,7 @@ const ProfileForm = () => {
           </FormControl>
         </GridItem>
       </Grid>
+      <Text textAlign={"left"}>Optimizely will store and process your personal data as described in our Privacy Policy. You can opt out at any time.</Text>
       <Button bg={"blue.600"} color={"white"} rounded={"3xl"}>Submit</Button>
     </VStack>
   );

@@ -20,30 +20,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import ProfileForm from "../Components/ProfileForm";
 import Profile from "../Components/Profile";
 import Footer from "../Components/Footer";
-// import  from 'react-icons/fa';
-// import {  Icon } from '@chakra-ui/react';
-// import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
-// const Feature = ({ title, text, icon }) => {
-//   return (
-//     <Stack>
-//       <Flex
-//         w={16}
-//         h={16}
-//         align={"center"}
-//         justify={"center"}
-//         color={"white"}
-//         rounded={"full"}
-//         bg={"gray.100"}
-//         mb={1}
-//       >
-//         {icon}
-//       </Flex>
-//       <Text fontWeight={600}>{title}</Text>
-//       <Text color={"gray.600"}>{text}</Text>
-//     </Stack>
-//   );
-// };
 function PriceWrapper({ children }) {
   return (
     <Box
@@ -62,37 +39,43 @@ function PriceWrapper({ children }) {
 
 const Home = () => {
   return (
-    <Container maxW="10xl" border={"1px solid red"}>
+    <Container maxW="8xl" border={"1px solid red"}>
       <Stack
-        minH={"50vh"}
-        direction={{ base: "column", md: "row" }}
+        minH={"40vh"}
+        direction={{ base: "column", md: "column" , lg:"row"}}
         w={"95%"}
         margin={"auto"}
-        
-
-        backgroundImage={"https://media-s3-us-east-1.ceros.com/optimizely/images/2022/04/25/105d9a99cee0f31848cb406b261f5b5d/gradient-path-1.png?imageOpt=1&fit=bounds&width=2038"}
+        border={"1px solid teal"}
+        // textAlign={"left"}
+        backgroundImage={
+          "https://media-s3-us-east-1.ceros.com/optimizely/images/2022/04/25/105d9a99cee0f31848cb406b261f5b5d/gradient-path-1.png?imageOpt=1&fit=bounds&width=2038"
+        }
         objectFit={"contain"}
       >
-        <Flex p={1} flex={1} align={"center"} justify={"center"} w={["100%", "36%", "36%"]}>
-          <Stack spacing={1} w={"full"} maxW={"lg"}>
+        <Flex
+          px={6}
+          border={"1px solid teal"}
+          // flex={1}
+          align={"center"}
+          justify={""}
+          w={{base:"100%",md:"80%", lg:"40%"}}
+          maxH={"80vh"}
+          textAlign={["center","left"]}
+         
+        >
+          <Stack spacing={1} maxW={"lg"} >
             <Heading
-              fontSize={{ base: "5xl", md: "6xl", lg: "7xl" }}
-              textAlign={"left"}
+              fontSize={{ base: "5xl", md: "5xl", lg: "7xl" }}
+              // textAlign={["center","left"]}
             >
-              <br />{" "}
-              <Text color={"black.400"} as={"span"}>
-                Unlock
-              </Text>
-              <br />
-              <Text color={"black.400"} as={"span"}>
-                digital
-              </Text>
-              <br />
-              <Text color={"black.400"} as={"span"}>
-                potential
-              </Text>{" "}
+              <br /> <Text>Unlock digital potential</Text>
             </Heading>
-            <Text fontSize={{ base: "lg", lg: "lg" }} color={"gray.500"} w={{base:"full", md:"full"}}>
+            <Text
+              fontSize={{ base: "lg",md:"md", lg: "lg" }}
+              color={"gray.900"}
+             
+              w={{ base: "100%", md: "full" }}
+            >
               Creating digital experiences that transform your company takes
               data-driven decisions, continued experimentation and constant
               invention. Optimizely Digital Experience Platform helps you unlock
@@ -100,7 +83,7 @@ const Home = () => {
             </Text>
           </Stack>
         </Flex>
-        <Flex flex={1} w={"100%"}>
+        <Flex  w={{base:"100%",md:"100%", lg:"60%"}}>
           <Image
             alt={"Login Image"}
             // border={"1px solid red"}
@@ -114,7 +97,7 @@ const Home = () => {
         minW={"full"}
         p={10}
         rounded="md"
-        h={"65vh"}
+        minH={"69vh"}
         backgroundSize={"cover"}
         backgroundPosition={"center center"}
       >
@@ -122,13 +105,14 @@ const Home = () => {
           backgroundColor={"#0037ff"}
           w={"full"}
           rounded="lg"
+          minH={"75vh"}
           justify={"center"}
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
         >
           <Stack w={"full"} align={"center"} spacing={6}>
             <Image
-              h={"20vh"}
+              h={"19vh"}
               src="https://media-s3-us-east-1.ceros.com/optimizely/images/2022/05/12/42f8fa19aad44cc9548b668c8256afc7/opticon-logo-anim-clean-rt-blue-matte-lockup.gif?imageOpt=1"
             />
             <Box display={"flex"} justifyContent={"space-around"} gap={6}>
@@ -143,7 +127,7 @@ const Home = () => {
               <Text
                 color={"white"}
                 fontWeight={700}
-                lineHeight={1.2}
+                lineHeight={1.3}
                 paddingLeft={3}
                 borderLeft={"2px solid gray"}
                 fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
