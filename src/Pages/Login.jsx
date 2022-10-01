@@ -16,8 +16,10 @@ import {
     useColorModeValue,
     Image,
     useToast,
+    Center
    
   } from '@chakra-ui/react';
+  import { FcGoogle } from 'react-icons/fc';
 import axios from 'axios';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
   const getData =()=>{
@@ -66,12 +68,18 @@ const Login = () => {
     <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6} textAlign={"center"}>
         <Image margin={"auto"} w={"50%"} src='https://accounts.welcomesoftware.com/images/welcome/welcome-optimizely-logo.png'/>
     <Box align={"center"} display={"flex"}  justifyContent={"space-around"} fontSize={"2xl"} fontWeight={700}>
-            
+    
             <Link className='link' to={"/login"}>Log in</Link>
         
             <Link className='link' to={"/signup"}>SignUp</Link>
           
           </Box>
+          <Button w={'full'} variant={'outline'} leftIcon={<FcGoogle />}>
+          <Center>
+            <Text>Sign in with Google</Text>
+          </Center>
+        </Button>
+        <Text fontWeight={500}>or</Text>
       <Box
         rounded={'lg'}
         bg={useColorModeValue('white', 'gray.700')}

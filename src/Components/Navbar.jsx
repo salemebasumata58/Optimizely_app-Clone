@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactNode } from "react";
 import {
   Box,
@@ -22,10 +22,12 @@ import {
   InputGroup,
   InputLeftAddon,
   InputRightAddon,
+  Container,
+  LinkBox,
 } from "@chakra-ui/react";
 import "../App.css";
 import { HamburgerIcon, CloseIcon, SearchIcon } from "@chakra-ui/icons";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Links = ["Products", "Plans", "Resources", "Partners"];
 
@@ -47,13 +49,20 @@ const NavLink = ({ children }) => (
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
+  const [search, setSearch] = useState("");
+console.log(search);
+
+  // const handleSearch =()=>{
+  //   console.log("go")
+  //  return <Link to={`https://www.optimizely.com/search/?startindex=0&searchQuery=${search}`}></Link>
+  // }
 
   return (
-    <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+  
+      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} width={"100%"} position={"sticky"} top={"0"} overflow={"visible"} >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"} width={"100%"}>
-            <Box>
+            <Box minW={"90px"}>
               <Link to={"/"}>
                 <Image src="https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg" />
               </Link>
@@ -61,7 +70,7 @@ const Navbar = () => {
             <HStack
               as={"nav"}
               width={"100%"}
-              fontSize={{ base: "xs", md: "xs", lg: "md" }}
+              fontSize={{ base: "xxs", md: "xs", lg: "sm" }}
               spacing={7}
               display={{ base: "none", md: "flex", lg: "flex" }}
               justifyContent={"space-around"}
@@ -70,24 +79,12 @@ const Navbar = () => {
                 display={"flex"}
                 w={"38%"}
                 justifyContent={"space-around"}
+                alignItems={"center"}
                 fontWeight={500}
               >
-                <Menu>
-                  <MenuButton fontWeight={500} className="link">
-                    Products
-                  </MenuButton>
-                  <MenuList w={["100%", "300%", "600%"]} float={"left"}>
-                    <Box>
-                      <SimpleGrid columns={[2, null, 3]} spacing="40px">
-                        <Box bg="tomato" height="150px"></Box>
-                        <Box bg="tomato" height="150px"></Box>
-                        <Box bg="tomato" height="150px"></Box>
-                        <Box bg="tomato" height="150px"></Box>
-                        <Box bg="tomato" height="150px"></Box>
-                      </SimpleGrid>
-                    </Box>
-                  </MenuList>
-                </Menu>
+                
+                   <a href={"https://www.optimizely.com/"}>Products</a> 
+                 
                 <Link className="link" to={"/plans"}>
                   Plans
                 </Link>
@@ -105,14 +102,14 @@ const Navbar = () => {
                 justifyContent={"space-between"}
               >
                 <Box fontWeight={500}>
-                  <Link className="link" to={"#"}>
+                  <a className="link" href={"https://www.optimizely.com/support/"}>
                     Support
-                  </Link>
+                  </a>
                 </Box>
                 <Box>
-                  <InputGroup size="sm">
-                    <InputLeftAddon children={<SearchIcon />} width={"15px"} />
-                    <Input placeholder="search" width={"80px"} />
+                  <InputGroup size="sm" alignItems={"center"} border={"1px solid gray"}>
+                    <a href={`https://www.optimizely.com/search/?startindex=0&searchQuery=${search}`} children={<SearchIcon w={"30px"} />} width={"15px"}></a>
+                    <Input border={"none"} placeholder="search" width={"80px"} value={search} name="search" onChange={(e)=> setSearch(e.target.value)}/>
                   </InputGroup>
                 </Box>
                 <Box>
@@ -178,7 +175,7 @@ const Navbar = () => {
           </Box>
         ) : null}
       </Box>
-    </>
+    
   );
 };
 

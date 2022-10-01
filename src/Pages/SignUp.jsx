@@ -22,11 +22,13 @@ import {
   Wrap,
   WrapItem,
   useToast,
+  Center,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 
 const SignUp = () => {
   const { register, setRegister } = useContext(AppContext);
@@ -82,6 +84,12 @@ const SignUp = () => {
             SignUp
           </Link>
         </Box>
+        <Button w={'full'} variant={'outline'} leftIcon={<FcGoogle />}>
+          <Center>
+            <Text>Sign in with Google</Text>
+          </Center>
+        </Button>
+        <Text fontWeight={500}>or</Text>
         <Box
           rounded={"lg"}
           bg={useColorModeValue("white", "gray.700")}

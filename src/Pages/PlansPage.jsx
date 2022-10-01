@@ -92,7 +92,7 @@ const PlansPage = () => {
     getData()
       .then((res) => {
         setData(res.data);
-        setLoading(false);
+        // setLoading(false);
       })
       .catch((err) => {
         setError(true);

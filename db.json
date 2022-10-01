@@ -28,94 +28,9 @@
       "id": 2
     },
     {
-      "email": "sbasumatas58@gmail.com",
-      "password": "12345",
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
       "id": 3
-    },
-    {
-      "email": "sbasumatas58@gmail.com",
-      "password": "12345",
-      "id": 4
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 5
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 6
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 7
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 8
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 9
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 10
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 11
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 12
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 13
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 14
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 15
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 16
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 17
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 18
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 19
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "cityslicka",
-      "id": 20
     }
   ],
   "plansData": [
@@ -200,6 +115,74 @@
       "img": "https://www.optimizely.com/contentassets/553eba1e73f64367ae841b02ba9aee0a/opt-icon_50px_headless.svg",
       "title": "Headless Experiences",
       "desc": "You need to create feature flags, release products and run experiments in different parts of your stack, all from one place."
+    }
+  ],
+  "userInfo": [
+    {
+      "first_name": "Salem",
+      "last_name": "Basumata",
+      "email": "sbasumatas58@gmail.com",
+      "company": "student",
+      "job_title": "engineers",
+      "phone": 7908292815,
+      "country": "india",
+      "optional": "hello",
+      "id": 1
+    },
+    {
+      "first_name": "Baljit",
+      "last_name": "horo",
+      "email": "samirsaibo@gmail.com",
+      "company": "masai",
+      "job_title": "engineers",
+      "phone": 875858860,
+      "country": "usa",
+      "optional": "hello everyone",
+      "id": 2
+    },
+    {
+      "first_name": "Baljit",
+      "last_name": "horo",
+      "email": "samirsaibo@gmail.com",
+      "company": "masai",
+      "job_title": "engineers",
+      "phone": 875858860,
+      "country": "usa",
+      "optional": "hello everyone",
+      "id": 3
+    },
+    {
+      "first_name": "Arpana",
+      "last_name": "Basumata",
+      "email": "wedaw@gmail.com",
+      "company": "masai",
+      "job_title": "housewife",
+      "phone": 765785234,
+      "country": "india",
+      "optional": "hello there",
+      "id": 4
+    },
+    {
+      "first_name": "Salem",
+      "last_name": "Basumata",
+      "email": "sbasumatas58@gmail.com",
+      "company": "frelancers",
+      "job_title": "designer",
+      "phone": 543555487,
+      "country": "usa",
+      "optional": "hello i am salem",
+      "id": 5
+    },
+    {
+      "first_name": "Salem",
+      "last_name": "Basumata",
+      "email": "sbasumatas58@gmail.com",
+      "company": "",
+      "job_title": "teacher",
+      "phone": 1234567890,
+      "country": "india",
+      "optional": "i am salem basumata",
+      "id": 6
     }
   ]
 }
