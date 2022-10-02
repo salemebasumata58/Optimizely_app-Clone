@@ -39,13 +39,12 @@ function PriceWrapper({ children }) {
 
 const Home = () => {
   return (
-    <Container maxW="8xl" border={"1px solid red"}>
+    <Container maxW="8xl">
       <Stack
         minH={"40vh"}
-        direction={{ base: "column", md: "column" , lg:"row"}}
+        direction={{ base: "column", md: "column", lg: "row" }}
         w={"95%"}
         margin={"auto"}
-        border={"1px solid teal"}
         // textAlign={"left"}
         backgroundImage={
           "https://media-s3-us-east-1.ceros.com/optimizely/images/2022/04/25/105d9a99cee0f31848cb406b261f5b5d/gradient-path-1.png?imageOpt=1&fit=bounds&width=2038"
@@ -54,16 +53,14 @@ const Home = () => {
       >
         <Flex
           px={6}
-          border={"1px solid teal"}
           // flex={1}
           align={"center"}
           justify={""}
-          w={{base:"100%",md:"80%", lg:"40%"}}
+          w={{ base: "100%", md: "80%", lg: "40%" }}
           maxH={"80vh"}
-          textAlign={["center","left"]}
-         
+          textAlign={["center", "left"]}
         >
-          <Stack spacing={1} maxW={"lg"} >
+          <Stack spacing={1} maxW={"lg"}>
             <Heading
               fontSize={{ base: "5xl", md: "5xl", lg: "7xl" }}
               // textAlign={["center","left"]}
@@ -71,9 +68,8 @@ const Home = () => {
               <br /> <Text>Unlock digital potential</Text>
             </Heading>
             <Text
-              fontSize={{ base: "lg",md:"md", lg: "lg" }}
+              fontSize={{ base: "lg", md: "md", lg: "lg" }}
               color={"gray.900"}
-             
               w={{ base: "100%", md: "full" }}
             >
               Creating digital experiences that transform your company takes
@@ -83,7 +79,7 @@ const Home = () => {
             </Text>
           </Stack>
         </Flex>
-        <Flex  w={{base:"100%",md:"100%", lg:"60%"}}>
+        <Flex w={{ base: "100%", md: "100%", lg: "60%" }}>
           <Image
             alt={"Login Image"}
             // border={"1px solid red"}
@@ -163,7 +159,7 @@ const Home = () => {
           </Stack>
         </VStack>
       </Flex>
-      <Box m={0} p={"2%"} border={"1px solid red"}>
+      <Box m={0} p={"2%"}>
         <Heading fontSize={{ base: "lg", sm: "3xl", md: "4xl", lg: "4xl" }}>
           Trusted by 9,000+ businesses and millions of happy customers
         </Heading>
@@ -260,7 +256,6 @@ const Home = () => {
           flex={1}
           textAlign={"left"}
           spacing={{ base: 3, md: 10 }}
-          border={"1px solid red"}
           bg={"blue"}
           paddingLeft={8}
           paddingTop={12}
@@ -491,7 +486,7 @@ const Home = () => {
           alignItems={"center"}
           display={"flex"}
           // justifyContent={"center"}
-          border={"1px solid red"}
+         
           spacing={{ base: 4, lg: 10 }}
           py={10}
         >
@@ -521,7 +516,7 @@ const Home = () => {
                   </Text>
                 </ListItem>
               </List>
-              <Box w="80%" textAlign={"right"} border={"1px solid red"}>
+              <Box w="80%" textAlign={"right"}>
                 <ArrowForwardIcon color={"white"} fontSize={"4xl"} />
               </Box>
             </VStack>
@@ -556,7 +551,7 @@ const Home = () => {
                   </Text>
                 </ListItem>
               </List>
-              <Box w="80%" textAlign={"right"} border={"1px solid red"}>
+              <Box w="80%" textAlign={"right"} >
                 <ArrowForwardIcon color={"white"} fontSize={"4xl"} />
               </Box>
             </VStack>
@@ -590,7 +585,7 @@ const Home = () => {
                   </Text>
                 </ListItem>
               </List>
-              <Box w="80%" textAlign={"right"} border={"1px solid red"}>
+              <Box w="80%" textAlign={"right"} >
                 <ArrowForwardIcon color={"white"} fontSize={"4xl"} />
               </Box>
             </VStack>

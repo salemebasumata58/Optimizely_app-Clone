@@ -6,7 +6,7 @@ import ProfileForm from '../Components/ProfileForm'
 
 const RequestPricingPage = () => {
   return (
-   <Container maxW={"10xl"} border={"1px solid red"}>
+   <Container maxW={"10xl"}>
     <Box h={200} p={"2%"} bg={"#080736"} display={{base:"block", md:"block", lg:"none"}}>
         <Heading textAlign={"left"} color={"white"} fontSize={{base:"4xl", md:"5xl"}}>Request pricing for Optimizely products</Heading>
     </Box>
@@ -15,7 +15,7 @@ const RequestPricingPage = () => {
         <ProfileForm />
       </Flex>
       <br />
-      <Box m={0} p={"2%"} border={"1px solid red"}>
+      <Box m={0} p={"2%"}>
         <Heading fontSize={{ base: "lg", sm: "3xl", md: "4xl", lg: "4xl" }}>
           Trusted by 9,000+ businesses and millions of happy customers
         </Heading>

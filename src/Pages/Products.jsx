@@ -21,7 +21,6 @@ const SolutionCard = ({ title, img, desc }) => {
       textAlign={"left"}
       p={3}
       bg={"gray.200"}
-      border={"1px solid red"}
     >
       {/* <Image  rounded={"2xl"} src={img} alignSelf={"center"} w={"100%"}/> */}
       <Box display={"flex"}>
