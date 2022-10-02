@@ -55,7 +55,7 @@ const ProfileForm = () => {
     e.preventDefault();
     axios({
       method: "Post",
-      url: " http://localhost:3004/userInfo",
+      url: "https://mock-server-app-7f6y.onrender.com/userInfo",
       data: userInfo,
     })
       .then((res) => {

@@ -41,7 +41,7 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:3004/registerUser`, {
+      .post(`https://mock-server-app-7f6y.onrender.com/registerUser`, {
         email: email,
         password: password,
       })

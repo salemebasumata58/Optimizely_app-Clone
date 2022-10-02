@@ -22,7 +22,7 @@ import {
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Footer from "../Components/Footer";
 const getData = () => {
-  return axios.get(`http://localhost:3004/partners`);
+  return axios.get(`https://mock-server-app-7f6y.onrender.com/partners`);
   // .then((res) =>
   //   console.log(res.data)
   // )

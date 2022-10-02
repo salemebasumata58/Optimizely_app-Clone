@@ -31,6 +31,26 @@
       "email": "eve.holt@reqres.in",
       "password": "cityslicka",
       "id": 3
+    },
+    {
+      "email": "sbasumatas58@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "email": "sbasumatas58@gmail.com",
+      "password": "123456789",
+      "id": 6
+    },
+    {
+      "email": "sb58@gmail.com",
+      "password": "123456",
+      "id": 7
     }
   ],
   "plansData": [
@@ -183,6 +203,17 @@
       "country": "india",
       "optional": "i am salem basumata",
       "id": 6
+    },
+    {
+      "first_name": "Salem",
+      "last_name": "Basumata",
+      "email": "sbasumatas58@gmail.com",
+      "company": "",
+      "job_title": "",
+      "phone": "",
+      "country": "",
+      "optional": "",
+      "id": 7
     }
   ]
 }

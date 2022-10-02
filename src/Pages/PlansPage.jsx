@@ -18,10 +18,10 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";
 const getData = () => {
-  return axios.get(`http://localhost:3004/plansData`);
+  return axios.get(`https://mock-server-app-7f6y.onrender.com/plansData`);
 };
 export const getDataforSolution = () => {
-  return axios.get(`http://localhost:3004/plansSolutionData`);
+  return axios.get(`https://mock-server-app-7f6y.onrender.com/plansSolutionData`);
 };
 const Card = ({ title, desc, list }) => {
   const navigate= useNavigate();

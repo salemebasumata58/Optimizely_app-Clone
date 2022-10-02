@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import {
   Box,
   Flex,
@@ -15,24 +14,23 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
-  Input,
-  SimpleGrid,
   Image,
-  Text,
   InputGroup,
-  InputLeftAddon,
-  InputRightAddon,
-  Container,
-  LinkBox,
+  Input,
 } from "@chakra-ui/react";
-import "../App.css";
-import { HamburgerIcon, CloseIcon, SearchIcon } from "@chakra-ui/icons";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import {
+  HamburgerIcon,
+  CloseIcon,
+  SearchIcon,
+  ArrowForwardIcon,
+} from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
 
 const Links = ["Products", "Plans", "Resources", "Partners"];
 
 const NavLink = ({ children }) => (
-  <NavLink
+  <Link
     px={2}
     py={1}
     rounded={"md"}
@@ -43,23 +41,18 @@ const NavLink = ({ children }) => (
     to={`/${children}`}
   >
     {children}
-  </NavLink>
+  </Link>
 );
 
-const Navbar = () => {
+export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
-console.log(search);
-
-  // const handleSearch =()=>{
-  //   console.log("go")
-  //  return <Link to={`https://www.optimizely.com/search/?startindex=0&searchQuery=${search}`}></Link>
-  // }
+  console.log(search);
 
   return (
-  
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} width={"100%"} position={"sticky"} top={"0"} overflow={"visible"} >
+    <>
+      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"} width={"100%"}>
             <Box minW={"90px"}>
@@ -82,15 +75,14 @@ console.log(search);
                 alignItems={"center"}
                 fontWeight={500}
               >
-                
-                   <a href={"https://www.optimizely.com/"}>Products</a> 
-                 
+                <Link to={"/product"} className="link">
+                  Products
+                </Link>
+
                 <Link className="link" to={"/plans"}>
                   Plans
                 </Link>
-                <Link className="link" to={"/resources"}>
-                  Resources
-                </Link>
+
                 <Link className="link" to={"/partners"}>
                   Partners
                 </Link>
@@ -102,14 +94,32 @@ console.log(search);
                 justifyContent={"space-between"}
               >
                 <Box fontWeight={500}>
-                  <a className="link" href={"https://www.optimizely.com/support/"}>
+                  <a
+                    className="link"
+                    href={"https://www.optimizely.com/support/"}
+                  >
                     Support
                   </a>
                 </Box>
                 <Box>
-                  <InputGroup size="sm" alignItems={"center"} border={"1px solid gray"}>
-                    <a href={`https://www.optimizely.com/search/?startindex=0&searchQuery=${search}`} children={<SearchIcon w={"30px"} />} width={"15px"}></a>
-                    <Input border={"none"} placeholder="search" width={"80px"} value={search} name="search" onChange={(e)=> setSearch(e.target.value)}/>
+                  <InputGroup
+                    size="sm"
+                    alignItems={"center"}
+                    border={"1px solid gray"}
+                  >
+                    <a
+                      href={`https://www.optimizely.com/search/?startindex=0&searchQuery=${search}`}
+                      children={<SearchIcon w={"30px"} />}
+                      width={"15px"}
+                    ></a>
+                    <Input
+                      border={"none"}
+                      placeholder="search"
+                      width={"80px"}
+                      value={search}
+                      name="search"
+                      onChange={(e) => setSearch(e.target.value)}
+                    />
                   </InputGroup>
                 </Box>
                 <Box>
@@ -120,25 +130,41 @@ console.log(search);
                       variant={"link"}
                       cursor={"pointer"}
                       minW={0}
+                      className="link"
                     >
                       <Link className="link">Login</Link>
                     </MenuButton>
                     <MenuList>
                       <MenuItem>
-                        <Link to={"#"}>Experimentation</Link>
+                        <Link to={"#"}>
+                          Experimentation{" "}
+                          <ArrowForwardIcon fontSize={19} marginLeft={5} />
+                        </Link>
                       </MenuItem>
                       <MenuItem>
-                        <Link to={"/login"}>Welcome</Link>
+                        <Link to={"/login"}>
+                          Welcome{" "}
+                          <ArrowForwardIcon fontSize={19} marginLeft={5} />
+                        </Link>
                       </MenuItem>
 
                       <MenuItem>
-                        <Link to={"#"}>Email Campaign</Link>
+                        <Link to={"#"}>
+                          Email Campaign{" "}
+                          <ArrowForwardIcon fontSize={19} marginLeft={5} />
+                        </Link>
                       </MenuItem>
                       <MenuItem>
-                        <Link to={"#"}>Data Platform</Link>
+                        <Link to={"#"}>
+                          Data Platform{" "}
+                          <ArrowForwardIcon fontSize={19} marginLeft={5} />
+                        </Link>
                       </MenuItem>
                       <MenuItem>
-                        <Link to={"/partners"}>Partners</Link>
+                        <Link to={"/partners"}>
+                          Partners{" "}
+                          <ArrowForwardIcon fontSize={19} marginLeft={5} />
+                        </Link>
                       </MenuItem>
                     </MenuList>
                   </Menu>
@@ -175,8 +201,6 @@ console.log(search);
           </Box>
         ) : null}
       </Box>
-    
+    </>
   );
-};
-
-export default Navbar;
+}
