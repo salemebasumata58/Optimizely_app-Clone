@@ -117,7 +117,7 @@ const PlansPage = () => {
     );
   }
   return (
-    <Container maxW="10xl" border={"1px solid red"}px={'7%'}>
+    <Container maxW="10xl" px={'7%'}>
       <Box textAlign={"left"} p={2}>
         <Heading>Plans & pricing</Heading>
         <br />

@@ -70,7 +70,7 @@ const PartnersPage = () => {
   }
 
   return (
-    <Container maxW="10xl" border={"1px solid red"}>
+    <Container maxW="10xl">
       <Stack
         minH={"70vh"}
         bg={"#0b122b "}
