@@ -28,17 +28,20 @@ const getData = () => {
   // )
   // .catch((err) => console.log(err));
 };
-const Card = ({img, desc, title}) => {
-
-  return( 
-  <Box rounded={"xl"} w="100%" minH={"550px"}  border={"1px solid red"} textAlign={"left"} px={2}>
-    <Image  rounded={"2xl"} src={img} alignSelf={"center"} w={"100%"}/>
-    <br />
-    <br />
-    <Text fontSize={{base:"md", md:"xl", lg:"2xl"}} fontWeight={500}>{title}</Text>
-    <Text fontSize={{base:"xs", md:"md", lg:"lg"}}>{desc}</Text>
-    <Button bg={"whiteAlpha.300"} >Read More <ArrowForwardIcon marginLeft={"10px"}/></Button>
-  </Box>
+const Card = ({ img, desc, title }) => {
+  return (
+    <Box rounded={"xl"} w="100%" minH={"550px"} textAlign={"left"} px={2}>
+      <Image rounded={"2xl"} src={img} alignSelf={"center"} w={"100%"} />
+      <br />
+      <br />
+      <Text fontSize={{ base: "md", md: "xl", lg: "2xl" }} fontWeight={500}>
+        {title}
+      </Text>
+      <Text fontSize={{ base: "xs", md: "md", lg: "lg" }}>{desc}</Text>
+      <Button bg={"whiteAlpha.300"}>
+        Read More <ArrowForwardIcon marginLeft={"10px"} />
+      </Button>
+    </Box>
   );
 };
 const PartnersPage = () => {
@@ -116,14 +119,16 @@ const PartnersPage = () => {
             We can help you find the best partner to meet your specific needs.
           </Text>
           <Box h={"50%"} w="100%">
-          <Button 
-            bg={"whiteAlpha.200"}
-            position={"relative"}
+            <Button
+              bg={"whiteAlpha.200"}
+              position={"relative"}
               bottom={0}
               float={"right"}
               color={"white"}
-              fontSize={"4xl"}><ArrowForwardIcon
-            /></Button>
+              fontSize={"4xl"}
+            >
+              <ArrowForwardIcon />
+            </Button>
           </Box>
         </Box>
         <Box bg="blue" minH={{ base: "350px", md: "300px" }} p={"9%"}>
@@ -136,14 +141,16 @@ const PartnersPage = () => {
           </Text>
 
           <Box h={"50%"} w="100%">
-            <Button 
-            bg={"whiteAlpha.200"}
-            position={"relative"}
+            <Button
+              bg={"whiteAlpha.200"}
+              position={"relative"}
               bottom={0}
               float={"right"}
               color={"white"}
-              fontSize={"4xl"}><ArrowForwardIcon
-            /></Button>
+              fontSize={"4xl"}
+            >
+              <ArrowForwardIcon />
+            </Button>
           </Box>
         </Box>
         <Box bg="yellow" minH={{ base: "350px", md: "300px" }} p={"9%"}>
@@ -155,14 +162,16 @@ const PartnersPage = () => {
             joining our network of more than 800 partners.
           </Text>
           <Box h={"50%"} w="100%">
-          <Button 
-            bg={"whiteAlpha.200"}
-            position={"relative"}
+            <Button
+              bg={"whiteAlpha.200"}
+              position={"relative"}
               bottom={0}
               float={"right"}
               color={"white"}
-              fontSize={"4xl"}><ArrowForwardIcon
-            /></Button>
+              fontSize={"4xl"}
+            >
+              <ArrowForwardIcon />
+            </Button>
           </Box>
         </Box>
         <Box bg="orange" p={"9%"} minH={{ base: "350px", md: "300px" }}>
@@ -173,14 +182,16 @@ const PartnersPage = () => {
             contact partners@optimizely.com
           </Text>
           <Box h={"50%"} w="100%">
-          <Button 
-            bg={"whiteAlpha.200"}
-            position={"relative"}
+            <Button
+              bg={"whiteAlpha.200"}
+              position={"relative"}
               bottom={0}
               float={"right"}
               color={"white"}
-              fontSize={"4xl"}><ArrowForwardIcon
-            /></Button>
+              fontSize={"4xl"}
+            >
+              <ArrowForwardIcon />
+            </Button>
           </Box>
         </Box>
       </SimpleGrid>
@@ -200,7 +211,7 @@ const PartnersPage = () => {
           maxW={"full"}
           minH={{ base: "200px", md: "300px" }}
           ratio={2}
-          border={"1px solid red"}
+          
         >
           <iframe
             title="naruto"
@@ -212,7 +223,7 @@ const PartnersPage = () => {
       <br />
       <Box
         bg={"gray.100"}
-        border={"1px solid red"}
+        border={"1px solid lightgray"}
         marginTop={0}
         textAlign={"left"}
         p={"1%"}
@@ -272,17 +283,22 @@ const PartnersPage = () => {
         </Flex>
       </Stack>
       <Box textAlign={"left"} px={1}>
-        <Heading px={4} fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }} >Just for you</Heading>
-        <Button  bg={"whiteAlpha.300"}>Powered by Intelligence Cloud Recommendations <ArrowForwardIcon marginLeft={5}/></Button>
+        <Heading px={4} fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
+          Just for you
+        </Heading>
+        <Button bg={"whiteAlpha.300"}>
+          Powered by Intelligence Cloud Recommendations{" "}
+          <ArrowForwardIcon marginLeft={5} />
+        </Button>
       </Box>
       <br />
-      <SimpleGrid columns={{base:1, md:2, lg:3}} gridGap={2}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gridGap={2}>
         {data?.map((el) => (
           <Card img={el.img} desc={el.desc} title={el.title} />
         ))}
       </SimpleGrid>
       <br />
-      <Footer/>
+      <Footer />
     </Container>
   );
 };

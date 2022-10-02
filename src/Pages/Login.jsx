@@ -17,7 +17,16 @@ import {
   Image,
   useToast,
   Center,
+  useDisclosure,
 } from "@chakra-ui/react";
+import {
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogContent,
+  AlertDialogOverlay,
+} from '@chakra-ui/react'
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 import { Link, Navigate, useNavigate } from "react-router-dom";
@@ -31,6 +40,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [data, setData] = useState([]);
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const cancelRef = React.useRef()
   const toast = useToast();
   const navi = useNavigate();
   useEffect(() => {
@@ -44,13 +55,16 @@ const Login = () => {
     console.log("yes");
 
     if (data[data.length-1].email === email && data[data.length-1].password === password) {
-      toast({
-        title: `${email} is Successfully Log-in`,
-        position: "top",
-        isClosable: true,
-      });
-      return navi("/");
-    }
+      
+      onOpen();
+      // toast({
+      //   title: `${email} is Successfully Log-in`,
+      //   position: "top",
+      //   isClosable: true,
+      // });
+      
+    };
+    // return navi("/");
   };
   console.log(data);
   // console.log(handleAuth)
@@ -169,6 +183,32 @@ const Login = () => {
           w={"20%"}
         />
       </Box>
+      <AlertDialog
+        isOpen={isOpen}
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+      >
+        <AlertDialogOverlay>
+          <AlertDialogContent>
+            <AlertDialogHeader fontSize='lg' fontWeight='bold'>
+             You are Log in Successfully
+            </AlertDialogHeader>
+
+            <AlertDialogBody>
+              Are you sure? You want to contnue.
+            </AlertDialogBody>
+
+            <AlertDialogFooter>
+              <Button ref={cancelRef} onClick={onClose}>
+                Cancel
+              </Button>
+              <Button colorScheme='red' onClick={onClose} ml={3}>
+                OK
+              </Button>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialogOverlay>
+      </AlertDialog>
     </Flex>
   );
 };

@@ -66,24 +66,30 @@ const ProfileForm = () => {
   };
   console.log(userInfo);
   if (success) {
-  return  <Alert
-      status="success"
-      variant="subtle"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      textAlign="center"
-      height="600px"
-    >
-      <AlertIcon boxSize="60px" mr={0} />
-      <AlertTitle mt={4} mb={1} fontSize={{base:"lg", md:"xl", lg:"2xl"}}>
-        Application submitted!
-      </AlertTitle>
-      <AlertDescription maxWidth="sm">
-        Thanks for submitting your application. Our team will get back to you
-        soon.
-      </AlertDescription>
-    </Alert>;
+    return (
+      <Alert
+        status="success"
+        variant="subtle"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        textAlign="center"
+        height="600px"
+      >
+        <AlertIcon boxSize="60px" mr={0} />
+        <AlertTitle
+          mt={4}
+          mb={1}
+          fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
+        >
+          Application submitted!
+        </AlertTitle>
+        <AlertDescription maxWidth="sm">
+          Thanks for submitting your application. Our team will get back to you
+          soon.
+        </AlertDescription>
+      </Alert>
+    );
   }
 
   return (
@@ -93,7 +99,7 @@ const ProfileForm = () => {
       p={5}
       alignItems={"flex-start"}
       bg={"#3be081"}
-      border={"1px solid red"}
+      
     >
       <VStack w={"full"} spacing={2} alignItems={"flex-start"}>
         <Text

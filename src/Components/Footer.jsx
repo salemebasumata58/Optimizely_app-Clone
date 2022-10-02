@@ -16,7 +16,7 @@ import {
   FormControl,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -140,11 +140,11 @@ const Footer = () => {
           </Stack>
           <Stack align={"flex-start"} borderTop={"2px solid lightgray"} p={4}>
             <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
+            <Link href={"https://www.facebook.com/optimizely/"}>Facebook</Link>
+            <Link href={"https://twitter.com/optimizely"}>Twitter</Link>
+            <Link href={"https://www.youtube.com/user/optimizely"}>Toutube</Link>
             <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
+            <Link href={"https://www.linkedin.com/company/optimizely/"}>LinkedIn</Link>
           </Stack>
         </SimpleGrid>
       </Container>
@@ -171,16 +171,16 @@ const Footer = () => {
             terms of use Trust center
           </Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
+            <SocialButton label={"Twitter"} href={"https://twitter.com/optimizely"}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
+            <SocialButton label={"YouTube"} href={"https://www.youtube.com/user/optimizely"}>
               <FaYoutube />
             </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
-              <FaInstagram />
+            <SocialButton label={"Facebook"} href={"https://www.facebook.com/optimizely/"}>
+              <FaFacebook />
             </SocialButton>
-            <SocialButton label={"Linkedin"} href={"#"}>
+            <SocialButton label={"Linkedin"} href={"https://www.linkedin.com/company/optimizely/"}>
               <FaLinkedinIn />
             </SocialButton>
           </Stack>

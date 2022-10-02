@@ -23,7 +23,16 @@ import {
   WrapItem,
   useToast,
   Center,
+  useDisclosure,
 } from "@chakra-ui/react";
+import {
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogContent,
+  AlertDialogOverlay,
+} from '@chakra-ui/react'
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import axios from "axios";
@@ -35,7 +44,10 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const toast = useToast()
+  const toast = useToast();
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const cancelRef = React.useRef()
+
 
   // console.log(register);
   const handleSubmit = (e) => {
@@ -47,11 +59,12 @@ const SignUp = () => {
       })
       .then((res) => {
        setRegister(res.data);
-       toast({
-        title: `You Have Successfully Sign-in`,
-        position: "top",
-        isClosable: true,
-      })
+       onOpen();
+      //  toast({
+      //   title: `You Have Successfully Sign-in`,
+      //   position: "top",
+      //   isClosable: true,
+      // })
       
       })
       .catch((err) => console.log(err));
@@ -172,6 +185,32 @@ const SignUp = () => {
           w={"20%"}
         />
       </Box>
+      <AlertDialog
+        isOpen={isOpen}
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+      >
+        <AlertDialogOverlay>
+          <AlertDialogContent>
+            <AlertDialogHeader fontSize='lg' fontWeight='bold'>
+              Sign Up Suiccessfully
+            </AlertDialogHeader>
+
+            <AlertDialogBody>
+              Are you sure? You want to continue.
+            </AlertDialogBody>
+
+            <AlertDialogFooter>
+              <Button ref={cancelRef} onClick={onClose}>
+                Cancel
+              </Button>
+              <Button colorScheme='red' onClick={onClose} ml={3}>
+                OK
+              </Button>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialogOverlay>
+      </AlertDialog>
       
     </Flex>
   );
