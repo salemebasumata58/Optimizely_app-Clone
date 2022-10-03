@@ -11,6 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
+import Footer from "../Components/Footer";
 import { getDataforSolution } from "../Pages/PlansPage";
 // import {SolutionCard} from "../Pages/PlansPage"
 const SolutionCard = ({ title, img, desc }) => {
@@ -68,8 +69,8 @@ const Products = () => {
     );
   }
   return (
-    <Container minW={"80%"} bg={"gray.200"} boxShadow={"dark-lg"} py={9}>
-      <Box display={"flex"}>
+    <Container minW={"80%"} bg={"gray.200"}  boxShadow={"dark-lg"} py={9}>
+      <Box display={"flex"} paddingTop={10}>
         <Box textAlign={"left"} width={"80%"}>
           <Heading fontSize={"2xl"}>Digital Experience Platform {"  "} <ArrowForwardIcon/></Heading>
           <br />
@@ -100,6 +101,7 @@ const Products = () => {
           />
         ))}
       </SimpleGrid>
+      <Footer/>
     </Container>
   );
 };
