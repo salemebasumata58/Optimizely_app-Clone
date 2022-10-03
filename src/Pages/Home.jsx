@@ -41,6 +41,7 @@ const Home = () => {
   return (
     <Container maxW="8xl">
       <Stack
+       paddingTop={20}
         minH={"40vh"}
         direction={{ base: "column", md: "column", lg: "row" }}
         w={"95%"}
