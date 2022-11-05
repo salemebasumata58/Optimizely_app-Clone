@@ -52,4 +52,4 @@ This is a simple project. You can open this project using the above deployed lin
 
 5.Search Page
  
-![SearchPage](https://i.ibb.co/2ZL1w46/Screenshot-1058.png)
+![SearchPage](https://i.ibb.co/RBqc2y1/Screenshot-1058.png)
